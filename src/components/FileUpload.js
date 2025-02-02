@@ -26,7 +26,7 @@ const FileUpload = ({onUploadSuccess}) => {
       console.log("in func", formData)
 
       try {
-        const response = await fetch("http://localhost:8000/api/upload", {
+        const response = await fetch("https://excelimporter-backend.onrender.com/api/upload", {
             method: "POST",
             body: formData
         });
@@ -41,7 +41,7 @@ const FileUpload = ({onUploadSuccess}) => {
       
     try{
       // If file upload successful, call the import API
-      const importResponse = await axios.post('http://localhost:8000/api/import', {
+      const importResponse = await axios.post('https://excelimporter-backend.onrender.com/api/import', {
         validRows: data.data,
       });
 

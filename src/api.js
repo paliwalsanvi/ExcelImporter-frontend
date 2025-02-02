@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://excelimporter-backend.onrender.com/api";
 
 // Function to upload the file to the backend
 export const uploadFile = (formData) => {

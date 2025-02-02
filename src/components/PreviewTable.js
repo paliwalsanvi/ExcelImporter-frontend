@@ -7,7 +7,7 @@ const PreviewTable = () => {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/preview?page=${page}&limit=10`)
+    fetch(`https://excelimporter-backend.onrender.com/api/preview?page=${page}&limit=10`)
       .then((response) => response.json())
       .then((result) => {
         setData((prevData) => [...result.data]);
@@ -22,7 +22,7 @@ const PreviewTable = () => {
     if (!confirmDelete) return;
   
     try {
-      const response = await fetch(`http://localhost:8000/api/delete/${id}`, {
+      const response = await fetch(`https://excelimporter-backend.onrender.com/api/delete/${id}`, {
         method: "DELETE",
       });
   
