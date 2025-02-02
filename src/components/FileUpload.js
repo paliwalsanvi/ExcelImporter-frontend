@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "../styles/upload.css"; 
 
 const FileUpload = ({onUploadSuccess}) => {
   const [file, setFile] = useState(null);

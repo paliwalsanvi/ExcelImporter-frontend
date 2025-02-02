@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../styles/table.css";
 
 const PreviewTable = () => {
   const [data, setData] = useState([]);
